@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Formulario 2</title>
+</head>
+<body>
+	<h1>Información sobre el producto</h1>
+	<form action="http://192.168.1.65/dam-2015/XHTML/post.php" method="post" enctype="multipart/form-data">
+		<fieldset>
+			<legend>Datos Básicos</legend>
+			<label for="">Nombre</label><br>
+ 			<input type="text" name="nombre" value=""><br>
+ 			<label for="">Descripción</label><br>
+ 			<textarea name="descripcion" id="" cols="30" rows="10"></textarea><br>
+ 			<label for="">Incluir mi foto </label>
+ 			<input	type="file"	name="foto"/><br>
+ 			<input	 id="boletin" type="checkbox"	name="boletin"	value="1"/>
+ 			<label for="boletin">Añadir contador de visitas</label><br>
+		</fieldset>
+	
+		<fieldset>
+				<legend>Datos économicos</legend>
+				<label for="">Precio</label>
+				<input type="text">
+				<label for="">€</label>
+				<label for="">Impuesto</label>
+				<select	id="so"	name="impuesto[]"	size="3" multiple>	
+					<option	value=""	selected="selected">-	Selecciona	-</option>	
+					<option	value="4">4%</option>	
+					<option	value="10">10%</option>	
+					<option	value="21">21%</option>	
+					
+				</select><br>
+				<span>Promoción</span><br>
+				<input type="radio" name="promo" value="ninguno"><label for="">Ninguno</label><br>
+				<input type="radio" name="promo" value="transporte"><label for="">Transporte gratuito</label></br>
+				<input type="radio" name="promo" value="descuento"><label for="">Descuento 5%</label>
+
+		</fieldset>
+		<input	id="boton1"	type="submit"	name="cambios" value="Guardar cambios"	/>
+ 		<input	id="boton2"	type="reset"	name="borrar"	 value=" Borrar los datos introducidos"/>
+
+
+		
+	</form>
+	
+</body>
+</html>

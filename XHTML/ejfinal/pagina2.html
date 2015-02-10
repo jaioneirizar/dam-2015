@@ -1,99 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>Ejercicio final</title>
 </head>
 <body>
-
-	<div id= "wrapper">
-			<div id="header">
+	<div class="wrapper">
+			<div class="header">
 				<h1>My webblog</h1>
-				<h3>My webblog</h3>
-				<div id="menu">
-					<ul>
-						<li>Home</li>
-						<li>Blog</li>
-						<li>Galery</li>
-						<li>About</li>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+				
+					<ul class="menu">
+						<li><a href="">Home</a></li>
+						<li><a href="">Blog</a></li>
+						<li><a href="">Galery</a></li>
+						<li><a href="">About</a></li>
 					</ul>
-				</div>
+			
 			</div>
-			<div id= "contenido"> 
+			<div class= "contenido"> 
+				<div class="entradas">
 					<div class="entrada">
-						<h4 class="titulo-izquierda">Title</h4>
-						<h5 class="titulo-derecha">Fecha</h5>
-						<div class="subtitulo"><a href="">John Doe, 5 Comments</a></div>
-							<p class="entrada-texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ex quis velit porro cumque necessitatibus incidunt labore et illo quaerat! Quam eum sit aliquid molestiae accusamus eveniet, inventore voluptatem dicta?</p>
-							<table border= 1>
+						<h2><a href="articulo.html">Title</a></h2>
+						<span class="titulo-derecha">Fecha</span>
+						<span class="subtitulo">
+							<a href="autor">John Doe,</a>
+							<a href="autor.html#commets">5 Comments</a>
+						</span>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ex quis velit porro cumque necessitatibus incidunt labore et illo quaerat! Quam eum sit aliquid molestiae accusamus eveniet, inventore voluptatem dicta?
+						</p>
+					
+						<table border= 1  class="tabla">
+							 <thead>
 								<tr>
-									<td>Columna 1</td>
-									<td>Columna 2</td>
-									<td>Columna 3</td>
-									<td>Columna 4</td>
-									<td>Columna 5</td>
-									<td>Columna 6</td>
+									<th>Columna 1</th>
+									<th>Columna 2</th>
+									<th>Columna 3</th>
+									<th>Columna 4</th>
+									<th>Columna 5</th>
+									<th>Columna 6</th>
 								</tr>
-								<tr>
+							</thead>
+							<tfoot>
+									</tr>
+										<span class="pie-tabla"><tr></span>
+										<td colspan="5"><span class="alineacion">Total:</span></td>
+										<td>345€</td>	
+									</tr>
+								</tfoot>
+								<tbody>
+									<tr>
+										<td>Lorem</td>
+										<td>Lorem</td>
+										<td>Lorem</td>
+										<td>Lorem</td>
+										<td>Lorem</td>
+										<td>Lorem</td>
+										
+									</tr>
+									<tr>
+										<td>Lorem</td>
+										<td>Lorem</td>
+										<td>Lorem</td>
+										<td>Lorem</td>
+										<td>Lorem</td>
+										<td>Lorem</td>
+										
+									</tr>
+									<tr>
+										<td>Lorem</td>
+										<td>Lorem</td>
+										<td>Lorem</td>
+										<td>Lorem</td>
+										<td>Lorem</td>
+										<td>Lorem</td>
+										
+									</tr>
+									<tr>
+										<td>Lorem</td>
+										<td>Lorem</td>
+										<td>Lorem</td>
+										<td>Lorem</td>
+										<td>Lorem</td>
 									<td>Lorem</td>
-									<td>Lorem</td>
-									<td>Lorem</td>
-									<td>Lorem</td>
-									<td>Lorem</td>
-									<td>Lorem</td>
-									
-								</tr>
-								<tr>
-									<td>Lorem</td>
-									<td>Lorem</td>
-									<td>Lorem</td>
-									<td>Lorem</td>
-									<td>Lorem</td>
-									<td>Lorem</td>
-									
-								</tr>
-								<tr>
-									<td>Lorem</td>
-									<td>Lorem</td>
-									<td>Lorem</td>
-									<td>Lorem</td>
-									<td>Lorem</td>
-									<td>Lorem</td>
-									
-								</tr>
-								<tr>
-									<td>Lorem</td>
-									<td>Lorem</td>
-									<td>Lorem</td>
-									<td>Lorem</td>
-									<td>Lorem</td>
-									<td>Lorem</td>
-									
-								</tr>
-								<tr>
-									<td colspan="5">Total</td>
-									<td>345€</td>
-									
-									
-								</tr>
+								</tbody>	
 								
 							</table>
-						</div>
 					</div>
+					<div class="bloque-comentarios">
 					<div class="comentarios">
-						<h4 class="titulo-categorias">Tiltulo comentarios</h4>
+						<h3 id="commnets">Titulo comentarios</h3>
 						
-									<div class= "comentarios-izquierda"><img src="img/perfil-usuario.png" alt=""></div>
+									<!--<div class= "comentarios-izquierda"><img src="img/perfil-usuario.png" alt=""></div>
 									<div class= "comentarios-derecha">
-										<div class="parrafo-titulo"><a href="">stylearu</a> February3</div>
+										<span class="parrafo-titulo"><a href="">stylearu</a> February3</span>
 										<p class="parrafo-cometarios">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum recusandae tenetur iure, necessitatibus officia sapiente enim, cum incidunt hic, debitis obcaecati praesentium rerum sint magni nostrum. Commodi eveniet, necessitatibus beatae!</p>
-									</div>
-						</div>
+									</div>-->
+
+									<ul class="comments">
+										<li>
+											<img src="" alt="">
+											<a href="">AUtor</a>
+											<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, </span>
+										</li>
+										<li>
+											<img src="" alt="">
+											<a href="">AUtor</a>
+											<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, </span>
+										</li>
+									</ul>
+									
+									
 					</div>
 
 					<div class="formularios">
-						<h4 class="titulo-categorias">Leave a commnet</h4>
-						<div class= "campos-formulario">
+						<h3>Leave a commnet</h3>
+						<form action="">
 							<label class="label">Name</label><br>
 							<input type="text" name="" id=""><br>
 							<label class="label">Mail</label><br>
@@ -103,11 +126,13 @@
 							<label  class="label" for="">Comment</label><br>
 							<textarea name="" id="" cols="30" rows="10"></textarea><br>
 							<input type="submit">
+						</form>
 						</div>
 					</div>
-
 			</div>
-			<div id="footer"><h3>Este es el footer</h3></div>
+		</div>
+			<div class="footer"><span>Copy</span><a href="test.html"> aaa</a></div>
+	</div>
 	</div>
 </body>
 </html>

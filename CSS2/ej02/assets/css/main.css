@@ -79,6 +79,7 @@ siempre hay que comprobar qie no nos estamos cargando el que tenia*/
 .secundario h2 {background-color: #DB905C; padding: 0.2em;}
 /*background: color de fondo url de la imagen que se quiere poner*/
 .menu {background: #004C99 url('../img/fondo_menu.gif') repeat-x 0 0;} 
-h1 {background: #004C99 url('../img/logo.gif') no-repeat 0 -10pxon;} 
+h1 {background: #004C99 url('../img/logo.gif') no-repeat 0 -10px;} 
 /*h1 {background-image: url('../img/logo.gif')}*/
 h1 span {visibility: hidden;}
+.mail {background: transparent url('../img/icono-mail.jpg') no-repeat 0 0px; padding-top:30px;} 

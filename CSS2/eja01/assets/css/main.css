@@ -1,0 +1,75 @@
+body
+{
+	font-family: Helvetica;
+}
+
+h1{
+	color: teal;
+}
+
+strong {
+
+	color: red;
+}
+
+#adicional p {
+	color: olive;
+}
+
+#adicional a {
+	color: green;
+}
+
+table, td, tr, th {
+
+	border: 1px #000 solid;
+}
+
+th{
+	color: red;
+	padding: 0.5em;
+}
+
+td{
+	color: green;
+	padding: 0.5em;
+}
+
+
+td > em{
+	color: green;
+}
+
+td > strong{
+	color: orange;
+}
+
+.destacado {
+	color: orange;
+}
+
+h2 {
+	color: blue;
+}
+
+caption {
+	color: blue;
+}
+ #especial {
+ 	color: fuchsia;
+ }
+
+ a {
+
+ 	color: red;
+ }
+
+ em {
+
+ 	color: blue;
+ }
+
+ th.especial{
+
+	color: orange;
+}

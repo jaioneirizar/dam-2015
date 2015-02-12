@@ -9,6 +9,7 @@ ul.menu li {
   border-bottom: 1px solid #7C7C7C;
   border-top: 1px solid #FFF;
   background: #F4F4F4;
+  position: relative;
 
 
 }
@@ -33,17 +34,21 @@ ul.menu li:hover a {
  }
 
 
-ul.submenu li:hover a {
+
+
+
+.submenu li{
 
 	position: absolute;
-	left: 100%;
-	top: 1px;
-	display: block;
+	display: none;
+  left: 100%;
+  top: -1px;
+
 }
 
+.menu:hover li{
 
-ul.submenu li{
+  display: block;
+  border: 1px #000 solid;
 
-	position: relative;
-	display: none;
 }

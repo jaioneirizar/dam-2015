@@ -1,0 +1,91 @@
+/*first-child,
+first-of-type, 
+nth-of-type, 
+nth-last-of-type, 
+last-of-type
+last-child*/
+
+li:first-child {
+
+	color: blue;
+}
+
+
+li:first-of-type{
+
+	color: blue;
+}
+
+li:nth-child(1){
+
+	color: blue;
+}
+
+li:nth-of-type(1){
+	color: blue;
+}
+
+li:nth-last-of-type(5){
+
+	color: blue;
+}
+
+
+li:nth-child(3){
+
+	font-size: 1.5em; 
+}
+li:nth-of-type(3)
+{
+	font-size: 1.5em; 
+}
+
+
+li:nth-child(4){
+
+	font-size: 2.0em; 
+}
+li:nth-of-type(4)
+{
+	font-size: 2.0em; 
+}
+
+
+
+li:last-child {
+
+	color: purple;
+	font-size: 28pt;
+}
+
+li:last-of-type {
+
+	color: purple;
+	font-size: 28pt;
+}
+
+li:nth-last-of-type(1) {
+
+	color: purple;
+	font-size: 28pt;
+}
+
+
+li:nth-last-child(1) {
+
+	color: purple;
+	font-size: 28pt;
+}
+
+
+/* si usamos first child  tiene que ser el primer hijo y en este caso tiene que se  class last
+.wrapper .last:first-child */
+
+
+/* sellecioname el primer hijo que esta dentro de last 
+.wrapper .last :first-child */
+
+.wrapper .last:first-child {
+
+	color:blue;
+};

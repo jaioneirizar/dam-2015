@@ -9,7 +9,6 @@ body {
 
 .fleft {
  	float: left;
- 	background-color: orange;
  	width: 40%;
  	margin-left: 2em;
  }
@@ -46,8 +45,5 @@ label {
 }
 
 
-.texto {
 
-	padding: 0;
-}
 

@@ -249,13 +249,14 @@ td .alineacion {
 
 .comments .avatar {
 
-	width: 100px;
+	width: 10%;
+
 
 }
 
-.comments .comment {
+.comment {
 
-	width: 85%;
+	width: 75%;
 	margin-left: 5%;
 }
 

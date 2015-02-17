@@ -1,0 +1,169 @@
+body {
+            margin: 0px;
+        }
+        #container{
+            background: #666 url(../img/ej03_tree.jpg) no-repeat -60px 0;
+            width: 420px;
+            height: 480px;
+            position: relative;
+        }
+        .snowflake {
+            color: #fff;
+            font-size: 2em;
+            position: absolute;
+            
+        }
+        .snowflake.f1 {
+            left: 40px;
+             animation-duration: 10s;
+    		animation-name:nevando;
+    		animation-iteration-count:infinite;
+    		animation-timing-function: linear;
+        }
+        .snowflake.f2 {
+            font-size: 1.8em;
+            left: 120px;
+            animation-duration: 6s;
+    		animation-name:copo2;
+    		animation-iteration-count:infinite;
+    		animation-delay: 3s;
+    		animation-timing-function: linear;
+        }
+        .snowflake.f3 {
+            left: 200px;
+            animation-duration: 6s;
+    		animation-name:copo3;
+    		animation-iteration-count:infinite;
+    		animation-delay: 2s;
+    		animation-timing-function: linear;
+        }
+        .snowflake.f4 {
+            font-size: 1.5em;
+            left: 280px;
+            animation-duration: 6s;
+    		animation-name:copo4;
+    		animation-iteration-count:infinite;
+    		animation-timing-function: linear;
+    		
+        }
+
+  @keyframes nevando {
+    from {
+        top: 0px;
+        
+    }
+
+    25% {
+
+    	 left:30px;
+    }
+
+    30% {
+
+    	 transform: translateX(10px);
+    }
+ 
+ 
+    to {
+        top:100%;
+    }
+}
+
+@keyframes copo2 {
+    from {
+        top: 0px;
+        
+    }
+
+    25% {
+
+    	 left:30px;
+    }
+
+    30% {
+
+    	 transform: translateX(10px) translateX(-10px);
+    	 transition: transform 20s;
+    	 transition-timing-function:linear;
+    	 transition-duration:50s;
+    }
+
+    40% {
+
+    	transform: translateX(2px) rotate(90deg) rotate(-270deg) ;
+   		transition: transform 3s;
+		transition-duration:5s;
+   		transition-timing-function:linear;
+    }
+
+     60% {
+
+    	 left:130px;
+    }
+ 
+ 
+    to {
+        top:100%;
+    }
+}
+
+
+@keyframes copo3 {
+    from {
+        top: 0px;
+        
+    }
+ 
+   	80% {
+
+   		transform: translateX(2px) rotate(90deg) rotate(-270deg) ;
+   		transition: transform 3s;
+		transition-duration:5s;
+   		transition-timing-function:linear;
+
+
+   	}
+    to {
+        top:100%;
+    }
+}
+
+@keyframes copo4 {
+    from {
+        top: 0px;
+        
+    }
+ 
+   	30% {
+
+   		transform: rotate(90deg) rotate(-90deg);
+   		transition: transform 4s;
+   		}
+
+
+   	60% {
+
+   		transform: rotate(90deg) rotate(-90deg);
+   		transition: transform 8s;}
+
+   	90% {
+
+   			left:85%;
+   	}
+    to {
+        top:100%;
+        left:98%;
+    }
+}
+
+@keyframes nieve {
+
+	from{
+			background-color:transparent;
+	} 
+
+	to{
+
+		background-color: white;
+	}
+}

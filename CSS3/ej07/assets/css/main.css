@@ -1,0 +1,62 @@
+.start {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 5em;
+}
+
+#clock {
+    position: relative;
+    width: 378px;
+    height: 378px;
+    background-image: url('../img/clockFace.png');
+    left: 50%;
+    margin: 5em 0 0 -189px;
+}
+
+#clock div {
+    position: absolute;
+}
+
+
+#hour img {
+
+    animation-name: hora;
+    animation-duration:10s/*21600s*/;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(60);
+}
+
+
+
+#minute img {
+
+    animation-name: hora;
+    animation-duration:60s/*3600s*/;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(60);
+}
+
+
+#second img {
+
+    animation-name: hora;
+    animation-duration:1s/*60s*/;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(60);
+}
+
+/* ANIMACIONES Y TRANSFORMACIONES */
+@keyframes hora {
+
+    from {
+            transform: rotate(0 deg);
+            
+    }
+
+    to {
+
+            transform: rotate(360deg);
+            
+    }
+}

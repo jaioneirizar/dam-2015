@@ -28,7 +28,7 @@
 
         return true;
     }else {
-         console.log("No has pasado ningun parametro");
+         console.log("Nos has pasado ningún parametro o lo introducido no es un dni");
             }
     
         }

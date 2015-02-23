@@ -2,6 +2,9 @@
 
     var validaDNI = function(dni) {
 
+
+    if (dni && typeof(dni) === "string" && dni.length === 9) {
+
         var numero = dni.substr(0, dni.length - 1);
         var letra = dni.substr(dni.length - 1, 1);
         numero = parseInt(numero);
@@ -19,12 +22,16 @@
                 console.log("La letra no es correcta");
             }
 
-
         }
 
 
+
         return true;
-    };
+    }else {
+         console.log("No has pasado ningun parametro");
+            }
+    
+        }
 
     console.log(validaDNI("123456789875433") === false);
     console.log(validaDNI("123456789A") === false);
@@ -36,3 +43,5 @@
 })();
 
 //dni_match('/[0-9]{7,8}[A-Z]/'); 
+
+//(\d{8})([-]?)([A-Z]{1})

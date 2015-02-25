@@ -5,7 +5,9 @@ window.onload = function() {
     console.log (span);
 
 
-    var muestra = function() {
+    var muestra = function(e) {
+
+        e.preventDefault();
 
         if (span.length) {
 

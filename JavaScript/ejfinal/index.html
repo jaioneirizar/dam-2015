@@ -1,28 +1,51 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<!-- saved from url=(0063)http://www.arkaitzgarro.com/javascript/snippets/cap18/ej21.html -->
-<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <title>Ejercicio 21 - Validación de formularios</title>
-    <link rel="stylesheet" href="assets/css/main.css" />
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Ejercicio 11 - Validación de formularios</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="../../RWD/bootstrap/css/bootstrap.min.css">
 </head>
+
 <body>
-    <form action="http://www.arkaitzgarro.com/javascript/snippets/cap18/servidor.php" method="POST" id="registro">
-        <fieldset>
-            <legend>Registro</legend>
-            <label for="registro_nombre">Nombre:</label>
-            <input type="text" name="nombre" id="registro_nombre" class="required">
-            <label for="registro_apellidos">Apellido:</label>
-            <input type="text" name="apellido" id="registro_apellido" class="required">
-            <label for="registro_email">Email:</label>
-            <input type="text" name="email" id="registro_email" class="required email">
-            <label for="registro_password">Password:</label>
-            <input type="password" name="password" id="registro_password" class="required">
-            <label for="registro_comentarios">Comentarios:</label>
-            <textarea name="comentarios" id="registro_comentarios" rows="10"></textarea>
-            <input type="checkbox" name="condiciones" id="registro_condiciones" value="1" class="required"><label for="registro_condiciones">Acepto las condiciones del servicio.</label>
-            <input type="submit" value="Enviar">
-        </fieldset>
-    </form>
+    <div class="wrapper">
+        <form action="servidor.php" method="POST" id="registro">
+            <fieldset>
+                <legend>Registro</legend>
+                <div class="form-group">
+                    <label for="registro_nombre">Nombre:</label>
+                    <input type="text" name="nombre" class="required form-control" id="registro_nombre">
+                    <span class="help-block form-control hidden"></span>
+                </div>
+                <div class="form-group">
+                    <label for="registro_apellidos">Apellido:</label>
+                    <input type="text" name="apellido" class="required form-control" id="registro_apellido">
+                    <span class="help-block form-control hidden"></span>
+                </div>
+                <div class="form-group">
+                    <label for="registro_email">Email:</label>
+                    <input type="text" name="email" class="required email form-control" id="registro_email">
+                    <span class="help-block form-control hidden"></span>
+                </div>
+                <div class="form-group">
+                    <label for="registro_password">Password:</label>
+                    <input type="password" name="password" class="required form-control" id="registro_password">
+                    <span class="help-block form-control hidden"></span> 
+                </div>
+                <div class="form-group">
+                    <label for="registro_comentarios">Comentarios:</label>
+                    <textarea name="comentarios" id="registro_comentarios form-control" class="required" rows="10"></textarea>
+                    <span class="help-block form-control hidden"></span>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" name="condiciones" id="registro_condiciones form-control" class="required" value="1">
+                    <label for="registro_condiciones">Acepto las condiciones del servicio.</label>
+                    <input type="submit" class="form-control" value="Enviar">
+                    <span class="help-block form-control hidden"></span>
+                </div>
+            </fieldset>
+        </form>
+    </div>
     <script type="text/javascript" src="assets/js/validator.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
-</body></html>
+</body>
+</html>

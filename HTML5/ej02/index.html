@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Reproductor de video</title>
+	<link rel="stylesheet" href="../prefixfree.min.js">
+	<link rel="stylesheet" href="assets/css/main.css">
+	
+
+</head>
+<body>
+
+	<video id="player">
+    	    <source src="assets/videos/BMX.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+   			<source src="assets/videos/BMX." type='video/webm; codecs="vp8, vorbis"'>
+	</video>
+	<ul id="playlist">
+		<li data-src="assets/videos/Teahupoo"><span class=""></span>Teahupoo</li>
+		<li data-src="assets/videos/BMX">BMX</li>
+		<li data-src="assets/videos/F1">Formula 1</li>
+	</ul>
+	
+		<input type="submit" value="Iniciar" id="play">
+		<input type="submit" value="Pausa" id="pause">
+		<input type="submit" value="Para" id="stop">
+		<input type="submit" value="Avanzar" id="forward">
+		<input type="submit" value="Retroceder" id="backward">
+		<input type="submit" value="Inicio" id="start">
+		<input type="submit" value="Fin" id="end">
+		<input type="submit" value="Pantalla Completa" class="boton">
+		<input type="range" id="volume">
+		<progress value='0' id='pogress' max='100' min='0'></progress>
+	
+	
+<script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -68,7 +68,7 @@ APP.DB=(function(){
 
 	return{
 		//puede ir con comillas
-		//insert:insert
-		getAll:getAll
+		insert:insert
+		//getAll:getAll
 	};
 })();

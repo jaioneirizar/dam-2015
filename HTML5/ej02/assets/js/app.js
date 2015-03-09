@@ -11,8 +11,9 @@ window.onload = function() {
     var backward = document.getElementById('backward');
     var forward = document.getElementById('forward');
     var volume = document.getElementById('volume');
-    var progress = document.getElementById('progress');
-    var playlist= document.querySelectorAll(#playlist);
+    var progressbar = document.getElementById('progress');
+    var playlist = document.querySelectorAll('.tracklist');
+    var fullscreen = document.getElementById('full');
 
 
 
@@ -20,7 +21,7 @@ window.onload = function() {
     var canplay = function(e) {
         loaded = true;
         volume.value = player.volume * 100;
-        //progress.value=0;
+        
     };
 
     var playFn = function() {
@@ -107,10 +108,16 @@ window.onload = function() {
     };
 
 
-    var updateFn = function() {
+    var fullScreen = function(event) {
+        if(loaded) {
+            (document.Fullscreen) ? document.cancelFullScreen : player.requestFullScreen();
+        }
+    };
+
+    var updateFn = function(event) {
 
        
-            progress.value = player.currentTime / player.duration *100;
+            progressbar.value = player.currentTime / player.duration *100;
        
 
     };
@@ -123,6 +130,19 @@ window.onload = function() {
 
     };
 
+     var changeVideo = function(event) {
+        var src = event.target.dataset.src;
+
+        if (Modernizr.video.h264) {
+            player.src = src + '.mp4';
+        }else {
+            player.src = src + '.webm';
+        }
+
+        player.load();
+    };
+
+
     play.addEventListener('click', playFn, false);
     player.addEventListener('canplay', canplay, false);
     player.addEventListener('click', playPauseFn, false);
@@ -134,7 +154,10 @@ window.onload = function() {
     forward.addEventListener('click', forwardFn, false);
     player.addEventListener('timeupdate',updateFn, false);
     volume.addEventListener('input',volumeFn, false);
-    playlist.addEventListener()
+    playlist[0].addEventListener('click', changeVideo, false);
+    
+    fullscreen.addEventListener('click', fullScreen, false);
+    
 
 
     // 

@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Reproductor de video</title>
-	<link rel="stylesheet" href="../prefixfree.min.js">
-	<link rel="stylesheet" href="assets/css/main.css">
-	
-
+    <meta charset="UTF-8">
+    <title>Reproductor de vídeo en HTML5</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" title="style" />
+    <script type="text/javascript" src="assets/js/vendor/modernizr.js"></script>
 </head>
 <body>
-
-	<video id="player">
-    	    <source src="assets/videos/BMX.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
-   			<source src="assets/videos/BMX." type='video/webm; codecs="vp8, vorbis"'>
-	</video>
-	<ul id="playlist">
-		<li data-src="assets/videos/Teahupoo"><span class=""></span>Teahupoo</li>
-		<li data-src="assets/videos/BMX">BMX</li>
-		<li data-src="assets/videos/F1">Formula 1</li>
-	</ul>
-	
-		<input type="submit" value="Iniciar" id="play">
-		<input type="submit" value="Pausa" id="pause">
-		<input type="submit" value="Para" id="stop">
-		<input type="submit" value="Avanzar" id="forward">
-		<input type="submit" value="Retroceder" id="backward">
-		<input type="submit" value="Inicio" id="start">
-		<input type="submit" value="Fin" id="end">
-		<input type="submit" value="Pantalla Completa" class="boton">
-		<input type="range" id="volume">
-		<progress value='0' id='pogress' max='100' min='0'></progress>
-	
-	
-<script src="assets/js/app.js"></script>
+    <div class="wrapper">
+        <video id="player" class="video">
+            <source src="assets/videos/BMX.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            <source src="assets/videos/BMX.webm" type='video/webm; codecs="vp8, vorbis"'>
+            <p>Your browser doesn’t support video.
+                Please download the video in <a href="BMX.webm">webM</a>
+                or <a href="BMX.mp4">MP4</a> format.
+            </p>
+        </video>
+        <div class="col-xs-12">
+            <div class="controles">
+                <progress class="control" id="progress" min="0" max="100"></progress>
+                <input type="button" class="control play" id="play" value="play">
+                <input type="button" class="control pause" id="pause" value="Pause">
+                <input type="button" class="control stop" id="stop" value="Stop">
+                <input type="button" class="control forward" id="forward" value="Forward">
+                <input type="button" class="control back" id="backward" value="Back">
+                <input type="button" class="control start" id="start" value="Start">
+                <input type="button" class="control end" id="end" value="End">
+                <input type="button" class="control full" id="full" value="Full Screen">
+                <input type="range" class="control vol" id="volume" min="0" max="100" step="1">
+            </div>
+        </div>
+        <div class="col-xs-12">
+            <div class="tracklist">
+                <ul class="list">
+                    <li data-src="assets/videos/Teahupoo"><span class="glyphicon glyphicon-facetime-video">Teahupoo</span></li>
+                    <li data-src="assets/videos/BMX"><span class="glyphicon glyphicon-facetime-video">BMX</span></li>
+                    <li data-src="assets/videos/F1"><span class="glyphicon glyphicon-facetime-video">F1</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@ window.onload = function() {
 
 
     var boton = document.getElementById('calcular');
-    var num = document.getElementById('number');
+    var numero = document.getElementById('number');
     var result = document.getElementById('resultados');
 
 
@@ -15,7 +15,7 @@ window.onload = function() {
 
         e.preventDefault();
 
-        var num = boton.value;
+        var num = numero.value;
         worker.postMessage(num);
 
 
@@ -25,8 +25,8 @@ window.onload = function() {
     worker.addEventListener('message', function(e) {
         var primes = e.data;
 
-        result.innerHTML = primes.join("");
+        result.innerHTML = primes.join(" ");
 
     });
 
-};
+}();

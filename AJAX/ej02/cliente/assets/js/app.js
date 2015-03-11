@@ -34,7 +34,7 @@ $(function() {
 
 
                 var items = [];
-                items.push("<option value='" + null + "'>" + 'Seleccione provincia' + "</option>");
+                items.push("<option value='" + null + "'>" + 'Selecciona municipio' + "</option>");
                 $.each(municipios, function(id, val) {
                     //items.push(new Option(data[id],val));
                     items.push("<option value='" + id + "'>" + val + "</option>");
